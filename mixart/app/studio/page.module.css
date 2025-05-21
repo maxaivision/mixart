@@ -1,0 +1,336 @@
+.controls__outer {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    /* width: 100%; */
+    padding: 0 var(--controls-padding-rem);
+    /* background-color: var(--background-color); */
+    overflow-y: auto;
+    flex-shrink: 0;
+    /* border: 2px solid red; */
+}
+
+@media only screen and (max-width: 1000px) {
+    .controls__outer {
+        width: 100%;
+        padding: var(--controls-padding-mobile-rem);
+    }
+}
+
+.creation_page_content {
+    display: flex;
+    flex-grow: 1; /* Take the remaining available space */
+    flex-shrink: 1;
+    flex-basis: 0;
+    /* border: 2px solid red; */
+}
+
+.generator_page_wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    scrollbar-width: none;
+    /* border: 2px solid red; */
+}
+
+.ai_generator_images_tabs_canvas {
+    display: flex;
+    flex-direction: column;
+    /* padding: 12px 0 12px 12px; */
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+    /* margin-top: 10px; */
+    /* border: 2px solid red; */
+}
+
+@media only screen and (max-width: 1000px) {
+    .ai_generator_images_tabs_canvas {
+        min-height: 0;
+        position: relative;
+        padding: 12px;
+        top: 0;
+        height: auto;
+        /* overflow: hidden; */
+    }
+}
+
+.generator_images_tabs_inner {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+}
+
+.ai_generator_canvas_wrapper {
+    width: 100%;
+    height: auto;
+    /* border: 2px solid blue; */
+}
+
+@media only screen and (max-width: 1000px) {
+    .ai-ai_generator_canvas_wrapper {
+        width: 100%;
+        min-height: 400px;
+        height: auto;
+    }
+}
+
+.ai_generator_canvas {
+    display: flex;
+    width: 100%;
+    height: auto;
+    /* border: 2px solid greenyellow; */
+}
+
+
+
+
+
+
+
+.page_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 4rem;
+    /* border: 2px solid white; */
+}
+
+.page_content_wrapper {
+    max-width: var(--content-max-width);
+    width: 100%;
+    padding: 64px 24px;
+    flex-grow: 1;
+    /* border: 2px solid white; */
+}
+
+.page_working_area {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    flex-grow: 1;
+    min-height: calc(100vh - 5rem);
+    /* border: 2px solid white; */
+}
+
+@media only screen and (max-width: 1000px) {
+    .page_working_area {
+        flex-direction: column;
+    }
+}
+
+.logo_wrapper {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 22px;
+    min-width: 144px;
+    width: auto;
+    margin-right: 1.25rem;
+    margin-left: 0;
+    /* border: 2px solid white; */
+}
+
+@media only screen and (max-width: 1000px) {
+    .logo_wrapper {
+        margin-right: 0.5rem;
+    }
+}
+
+.logo_wrapper_svg {
+    position: relative;
+    width:100%; 
+    height:100%
+}
+
+.mansory_page_wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    scrollbar-width: none;
+    /* border: 2px solid red; */
+}
+
+.masonry_scroll_wrapper {
+    height: calc(100vh - 5rem);
+    overflow-y: auto;
+    width: 100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .masonry_scroll_wrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+
+.masonry {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    /* height: 100%; */
+    margin-top: 10px;
+    padding: 10px;
+    padding-top: 0;
+    /* border: 2px solid red; */
+  }
+  
+  .column {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* border: 2px solid red; */
+  }
+
+  
+  /* RESPONSIVE COLUMN ADJUSTMENTS */
+  @media (max-width: 768px) {
+    .masonry {
+      flex-direction: column;
+    }
+  
+    .column {
+      flex: 0 1 100%;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .masonry {
+      flex-direction: row;
+    }
+  
+    .column {
+      flex: 0 1 calc(33.33% - 20px);
+    }
+  }
+  
+  @media (min-width: 1600px) {
+    .masonry {
+      flex-direction: row;
+    }
+  
+    .column {
+      flex: 0 1 calc(20% - 20px);
+    }
+  }
+
+  .masonry_scroll_wrapper {
+    height: calc(100vh - 5rem);
+    overflow-y: auto;
+    width: 100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .masonry_scroll_wrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+
+.masonry {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    /* height: 100%; */
+    margin-top: 10px;
+    padding: 10px;
+    padding-top: 0;
+    /* border: 2px solid red; */
+  }
+  
+  .column {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* border: 2px solid red; */
+  }
+
+  
+  /* RESPONSIVE COLUMN ADJUSTMENTS */
+  @media (max-width: 768px) {
+    .masonry {
+      flex-direction: column;
+    }
+  
+    .column {
+      flex: 0 1 100%;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .masonry {
+      flex-direction: row;
+    }
+  
+    .column {
+      flex: 0 1 calc(33.33% - 20px);
+    }
+  }
+  
+  @media (min-width: 1600px) {
+    .masonry {
+      flex-direction: row;
+    }
+  
+    .column {
+      flex: 0 1 calc(20% - 20px);
+    }
+  }
+
+
+.model_tab_selector {
+    display: flex;
+    justify-content: flex-start;
+    justify-self: center;
+    align-self: center;
+    gap: 32px;
+    width: 60%;
+    height: 23px;
+    margin-bottom: 16px;
+    font-size: var(--font-regular-small);
+    font-weight: var(--font-weight-regular-enlarged);
+    /* border: 2px solid red; */
+}
+
+@media (max-width: 1000px) {
+    .model_tab_selector {
+        padding: 0 16px;
+        width: 100%;
+    }
+}
+
+.model_tab {
+    font-size: var(--font-regular-small);
+    font-weight: var(--font-weight-regular-enlarged);
+    color: var(--text-color-gray);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    width: 50%;
+    /* border: 2px solid red; */
+}
+
+.active_tab {
+    background: linear-gradient(90deg, var(--text-new-gradient-start) 0%, var(--text-new-gradient-end) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.active_tab::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, var(--text-new-gradient-start) 0%, var(--text-new-gradient-end) 100%);
+}

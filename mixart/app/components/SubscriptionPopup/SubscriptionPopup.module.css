@@ -1,0 +1,32 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    background: rgba(0, 0, 0, .55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal {
+    position: relative;
+    max-width: 980px;
+    width: 95%;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 12px;
+    padding: 24px 16px;
+    background: #18191bdc;
+    /* border: 2px solid red; */
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+  
+  .close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }

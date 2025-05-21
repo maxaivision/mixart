@@ -1,0 +1,33 @@
+.button {
+  padding: 9px 32px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  width: fit-content;
+}
+
+.button span {
+  z-index: 10;
+  position: relative;
+}
+
+.button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 200%;
+  background: linear-gradient(104deg, #e65da9 0%, #9f68d3 50%, #e65da9 100%);
+  transition: 0.2s ease-out;
+}
+
+.button:hover:before {
+  transform: translateX(-50%);
+}
